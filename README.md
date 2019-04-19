@@ -1,15 +1,6 @@
-# Infinite Carousel
-
-Showcasing recent projects or high profile clients is essential to attracting new customers. [Solodev's](https://www.solodev.com/) infinite carousel cycles through dozens of items with contemporary styling and necessary responsiveness. Using [Slick Slider by Ken Wheeler](http://kenwheeler.github.io/slick/), this carousel can be adapted to fit your website needs and add a touch of agency inspired design.
-
-
-## Tutorial
-
-For detailed instructions, view Solodev's [Adding an Infinite Client Logo Carousel to your Website](https://www.solodev.com/blog/web-design/code-examples/adding-an-infinite-customer-logo-carousel-to-your-website.stml) article.
-
 ## Demo
 
-Check out a working example on [JSFiddle](https://jsfiddle.net/solodev/huten0wq/).
+Check out a working example on https://prakarsh2019.netlify.com.
 
 ## HTML
 
