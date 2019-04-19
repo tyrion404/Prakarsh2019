@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Prakarsh 2019</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="flipclock.css">
+    <link rel="stylesheet" type="text/css" href="carousel.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <script src="flipclock.min.js"></script>
+    
+    <script>
+            $(document).ready(function () {
+                    // Add smooth scrolling to all links
+                    $("a").on('click', function (event) {
+    
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== "") {
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
+    
+                            // Store hash
+                            var hash = this.hash;
+    
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 768, function () {
+    
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            });
+                        } // End if
+                    });
+                });
+    </script>
+    <script>
+            $(window).scroll(function () {
+                $(".opacity-scroll").css("opacity",$(window).scrollTop() / screen.availHeight);
+            });
+    </script>
+    <style>
+        /* ---- particles.js container - start --- */
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("backsite6.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            z-index: -1;
+        }
+        .flip-clock-divider .flip-clock-label{
+            bottom:-1.5em;
+            top:auto;
+            font-size: 2em;
+            right:-96px !important;
+        }
+        /* ---- particles.js container - end --- */
+        .homepage{
+            position: absolute;
+            left:10%;
+            top:20%;
+            width:80%;
+            height:50%;
+            background: #fff;
+            opacity: 0.8;
+            border-radius: 20px;
+        }
+        .logo-home{
+            position: absolute;
+            left:25%;
+            top:5%;
+            width:50%;
+            height:90%;
+            background: url('logoprakarsh.png') no-repeat;
+            background-position: center;
+            background-size: 120%;
+        }
+        @media screen and (max-width:969px){
+            .logo-home{
+                background-size: 200%;
+            }
+        }
+        @media screen and (max-width:500px){
+            .logo-home{
+                background-size: 282%;
+            }
+        }
+        .hidden{
+            display: none;
+        }
+        /* ---- Logo and scroll anim wrapper - start --- */
+        .opacity-scroll{
+            position: absolute;
+            height:100%;
+            width:100%;
+            background: #000000;
+            opacity:0;
+        }
+        .scroll-opacity{
+            position: absolute;
+            top:0;
+            left:0;
+            height:100%;
+            width:100%;
+            background: #000000;
+            opacity: 0;
+            z-index: 11;
+        }
+        .scroll-wrapper{
+            position: absolute;
+            height:100%;
+            width:100%;
+        }
+        .scroll-wrapper section {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background:transparent;
+        }
+        .scroll-wrapper section::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 80%;
+            background:transparent;
+        }
+        .scroll-wrapper .demo a {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            z-index: 2;
+            display: inline-block;
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            color: #fff;
+            font : normal 400 20px/1 'Josefin Sans', sans-serif;
+            letter-spacing: .1em;
+            text-decoration: none;
+            transition: opacity .3s;
+        }
+        .scroll-wrapper .demo a:hover {
+            opacity: .5;
+        }
+        
+        .scroll-wrapper #section03 a {
+            padding-top: 60px;
+        }
+        .scroll-wrapper #section03 a span {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 46px;
+            height: 46px;
+            margin-left: -23px;
+            border: 1px solid #3B3646;
+            border-radius: 100%;
+            box-sizing: border-box;
+        }
+        .scroll-wrapper #section03 a span::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            content: '';
+            width: 16px;
+            height: 16px;
+            margin: -12px 0 0 -8px;
+            border-left: 1px solid #3B3646;
+            border-bottom: 1px solid #3B3646;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            box-sizing: border-box;
+        }
+        .scroll-wrapper #section03 a span::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            content: '';
+            width: 44px;
+            height: 44px;
+            box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+            border-radius: 100%;
+            opacity: 0;
+            -webkit-animation: sdb03 3s infinite;
+            animation: sdb03 3s infinite;
+            box-sizing: border-box;
+        }
+        @-webkit-keyframes sdb03 {
+            0% {
+            opacity: 0;
+            }
+            30% {
+            opacity: 1;
+            }
+            60% {
+            box-shadow: 0 0 2px 30px #3B3646;
+            opacity: 0;
+            }
+            100% {
+            opacity: 0;
+            }
+        }
+        @keyframes sdb03 {
+            0% {
+            opacity: 0;
+            }
+            30% {
+            opacity: 1;
+            }
+            60% {
+            box-shadow: 0 0 2px 30px #3B3646;
+            opacity: 0;
+            }
+            100% {
+            opacity: 0;
+            }
+        }
+        /* ---- Logo and scroll anim wrapper - end --- */
+        #about{
+            text-align: -webkit-center;
+        }
+        .border-clock{
+            height: 1px;
+            width: 100%;
+            background: #b8b8b8;
+        }
+        #launch-heading{
+            margin:30px 0px;
+        }
+        /* ---- Guests - start --- */
+        .spacer-home{
+            width: -webkit-fill-available;
+            height: -webkit-fill-available;
+        }
+        /*
+        .guest-shadow{
+            font-size: 5em;
+            font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+            padding-left:100px;
+            padding-top:50px;
+            letter-spacing: .15em;
+            text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #bcbbba, -19px 38px 1px #c1bfbf, -20px 40px 1px #c6c4c4, -21px 42px 1px #cbc9c8, -22px 44px 1px #cfcdcd, -23px 46px 1px #d4d2d1, -24px 48px 1px #d8d6d5, -25px 50px 1px #dbdad9, -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2;
+        }
+        */
+        .img-1{
+            position: inherit;
+            height:230px;
+            display:block;
+            overflow: hidden;
+        }
+        .img-1 span{
+            position: absolute;
+            height:300%;
+            width:200%;
+            background:rgb(0, 0, 0);
+            transform: translate(-100%,-100%) rotate(-45deg);
+            transition: 0.3s ease;
+            opacity: 0.3;
+        }
+        .img-1:hover > span{
+            transform: translate(-25%,-25%) rotate(-45deg);
+            transition: 0.3s ease;
+        }
+        .img-2{
+            position: inherit;
+            height:230px;
+            display:block;
+            overflow: hidden;
+        }
+        .img-2 span{
+            position: absolute;
+            height:300%;
+            width:200%;
+            background:rgb(0, 0, 0);
+            transform: translate(-100%,-100%) rotate(-45deg);
+            transition: 0.3s ease;
+            opacity: 0.3;
+        }
+        .img-2:hover > span{
+            transform: translate(-25%,-25%) rotate(-45deg);
+            transition: 0.3s ease;
+        }
+        #img-01{
+            background-image: url('static/eve/1.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img-02{
+            background-image: url('static/eve/2.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img-03{
+            background-image: url('static/eve/3.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img-04{
+            background-image: url('static/eve/4.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img-05{
+            background-image: url('static/eve/5.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #img-06{
+            background-image: url('static/eve/6.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }#img-07{
+            background-image: url('static/eve/7.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }#img-08{
+            background-image: url('static/eve/8.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #events-container{
+            padding-top:30px;
+            padding-bottom: 50px;
+        }
+        #events-heading{
+            margin-bottom:20px;
+            text-align: center;
+            padding: 10px;
+            font-size: 4em;
+            line-height:normal;
+        }
+        #event-text{
+            color: #6c757d;
+            line-height: 1;
+            text-align: center;
+            font-size: 0.7em;
+            margin-bottom: 2rem;
+        }
+        #col-left{
+            padding-right:0px;
+        }
+        #col-mid{
+            padding-left:0px;
+            padding-right:0px;
+        }
+        #col-right{
+            padding-left:0px;
+        }
+        #event-icons01 .col{
+            padding:0 !important;
+            padding-top:15px;
+        }
+        @media only screen and (max-width: 600px) {
+            #col-left{
+                padding-right:15px;
+            }
+            #col-mid{
+                padding-left:15px;
+                padding-right:15px;
+            }
+            #col-right{
+                padding-left:15px;
+            }
+        }        
+        /* ---- Guests - end --- */
+
+        /* ---- Events - start --- */
+        .events-blur{
+            position: fixed;
+            display:none;
+            width: 100%;
+            height:100%;
+            top:0;
+            left:0;
+            background:#00000069;
+            z-index: 5;
+        }
+        #guests-container{
+            background-color: #e7e5e4;
+            height: -webkit-fill-available;
+            padding: 0px;
+        }
+        #guests-heading{
+            height: 140px;
+        }
+        #guests-showcase-wrapper{
+            background: #425664;
+            height: 390px;
+            position: relative;
+            color:#eeeeee;
+        }
+        #guests-showcase-info{
+            padding:50px;
+        }
+        #guests-showcase-info p{
+            width:30%;
+            padding-top: 15px;
+            padding-bottom: 30px;
+        }
+        #guests-showcase-info a{
+            text-decoration: none;
+            color: #eeeeee;
+            padding: 10px 20px;
+            border: 2px solid #eeeeee;
+            border-radius: 45px 45px 45px 45px;
+            transition: 0.5s ease;
+        }
+        #guests-showcase-info a:hover{
+            color: #425664;
+            background: #eeeeee;
+            transition: 0.5s ease;
+        }
+        .guests-showcase{
+            position: absolute;
+            margin: 0px;
+            right:40px;
+            bottom:-50px;
+            width: 500px;
+            height:450px;
+        }
+        #bg-img1{
+            background-image: url('aariz.jpg');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 450px;
+
+        }
+        #bg-img2{
+            background-image: url('tambe.jpg');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 450px;
+            
+        }
+        #bg-img3{
+            background-image: url('sashi.jpg');
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+            height: 450px;
+            
+        }
+        .guests-showcase-nav{
+            position: absolute;
+            width:30px;
+            height:100px;
+            right:20px;
+            bottom:20px;
+            background: #425664;
+        }
+        .guests-showcase-nav div{
+            height:25%;
+            width:100%;
+            text-align: center;
+            background: #425664;
+        }
+        .hidden-1{
+            display: none;
+        }
+        @media only screen and (max-width:576px){
+            .guests-showcase .slick-list{
+                height: -webkit-fill-available;
+            }
+            #nav-res-01{
+                position: inherit; 
+                display:inline-block; 
+                margin-right:20px;
+            }
+            #nav-res-02{
+                position: inherit; 
+                display:inline-block; 
+            }
+            #guests-showcase-wrapper {
+                height: 320px;
+                width: 92%;
+                left: 0;
+                font-size: 0.7em;
+                margin:0;
+                padding: 0;  
+            }
+            #guests-showcase-info p {
+                width: 80%;
+                padding-top: 15px;
+                padding-bottom: 30px;
+            }
+            #guests-showcase-info{
+                padding:0;  
+                padding-top: 10px;
+            }
+            #guests-showcase-info .display-4{
+                font-size:2rem;
+            }
+            #guests-showcase-info a{
+                padding: 6px 12px;
+            }
+            .guests-showcase{
+                width: 71%;
+                height: 72%;
+                top: 53%;
+                right: -35px;
+            }
+            .guests-showcase-nav{
+                display: none;
+            }
+            .hidden-1{
+                display: inherit;
+            }
+            #bg-img1{
+                height:-webkit-fill-available;
+            }
+            #bg-img2{
+                height:-webkit-fill-available;
+            }
+            #bg-img3{
+                height:-webkit-fill-available;
+            }
+        }
+        #gsna{
+            background:#B3BFB8;
+        }
+        .footer-social ul{
+            list-style: none;
+            text-align: center;
+            padding: 0px;
+        }
+        .footer-social ul li{
+            display: inline-block;
+            position: relative;
+            width:40px;
+            height:40px;
+            border: 2px solid #3B3646;
+            border-radius: 50%;
+            transition: 0.4s ease;
+            cursor: pointer;
+        }
+        .footer-social ul li:hover{
+            background: #3B3646;
+            transition: 0.4s ease;
+        }
+        .footer-social ul li:hover > a{
+            color: #eeeeee;
+            transition: 0.4s ease;
+        }
+        .footer-social ul li a{
+            font-size:1.1em;
+            position: absolute;
+            top:50%;
+            transform: translateY(-55%) translateX(-50%);
+            color: #3B3646;
+            transition: 0.4s ease;
+        }
+        .footer-signoff{
+            color:#333331;
+            width:90%;
+            padding:10px 0;
+            margin-top:10px;
+            margin-left:5%;
+            border-top:1px solid #333333;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 0.7em;
+        }
+        @media only screen and (max-width: 360px) {
+    .clock { margin: 0 auto; display: block; width: 100%; }
+
+    .flip-clock-wrapper ul {padding:0; height: 35px; line-height: 35px; margin:2px; width: 24px !important;}
+    .flip-clock-wrapper ul li a div.up:after { top: 16px; }
+    .flip { width: 24px !important; }
+    .flip-clock-divider { height: 35px; width: 10px !important;}
+    .flip-clock-dot { height: 4px; width: 4px; left: 2px !important;}
+    .flip-clock-dot.top { top: 12px; }
+    .flip-clock-dot.bottom { bottom: 6px; }
+
+    .flip-clock-divider .flip-clock-label { font-size: 11px !important; }
+    .flip-clock-divider.days .flip-clock-label { right: -42px !important; }
+    .flip-clock-divider.hours .flip-clock-label { right: -42px !important; }
+    .flip-clock-divider.minutes .flip-clock-label { right: -48px !important; }
+    .flip-clock-divider.seconds .flip-clock-label { right: -50px !important; }
+    .flip-clock-wrapper ul li { line-height: 35px; }
+    .flip-clock-wrapper ul { width: 28px !important; }
+    .flip-clock-wrapper ul li a div div.inn { font-size: 21px; }
+}
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    .clock { margin: 0 auto; display: block; width: 100%; }
+
+    .flip-clock-wrapper ul { padding:0; height: 35px; line-height: 35px; margin:2px; width: 30px !important;}
+    .flip-clock-wrapper ul li a div.up:after { top: 16px; }
+    .flip { width: 30px; }
+    .flip-clock-divider { height: 35px; width: 15px;}
+    .flip-clock-dot { height: 4px; width: 4px; left: 4px !important;}
+    .flip-clock-dot.top { top: 12px; }
+    .flip-clock-dot.bottom { bottom: 6px; }
+
+    .flip-clock-divider .flip-clock-label { font-size: 11px !important; }
+    .flip-clock-divider.days .flip-clock-label { right: -46px !important; }
+    .flip-clock-divider.hours .flip-clock-label { right: -46px !important; }
+    .flip-clock-divider.minutes .flip-clock-label { right: -55px !important; }
+    .flip-clock-divider.seconds .flip-clock-label { right: -55px !important; }
+    .flip-clock-wrapper ul li { line-height: 35px; }
+    .flip-clock-wrapper ul { width: 26px; }
+    .flip-clock-wrapper ul li a div div.inn { font-size: 21px; }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .clock { margin: 0 auto; display: block; width: 100%; }
+
+    .flip-clock-wrapper ul { height: 50px; line-height: 50px; }
+    .flip-clock-wrapper ul li a div.up:after { top: 24px; }
+    .flip-clock-divider { height: 50px; }
+    .flip-clock-dot { height: 6px; width: 6px; left: 7px;}
+    .flip-clock-dot.top { top: 17px; }
+    .flip-clock-dot.bottom { bottom: 8px; }
+
+    .flip-clock-divider .flip-clock-label { font-size: 11px; }
+    .flip-clock-divider.days .flip-clock-label { right: -58px; }
+    .flip-clock-divider.hours .flip-clock-label { right: -58px; }
+    .flip-clock-divider.minutes .flip-clock-label { right: -64px; }
+    .flip-clock-divider.seconds .flip-clock-label { right: -64px; }
+    .flip-clock-wrapper ul li { line-height: 50px; }
+    .flip-clock-wrapper ul { width: 37px; }
+    .flip-clock-wrapper ul li a div div.inn { font-size: 30px; }
+}
+@media screen and (max-width:500px){
+    #footer-responsive{
+        min-width:100%;
+        height: fit-content;
+        padding-top: 30px;
+    }
+    #footer-responsive iframe{
+        width: 100%;
+        height: 300px;
+        padding: 0 !important;
+    }
+    .guest-shadow{
+        font-size:3em;
+        padding-left: 55px;
+    }
+}
+    th{
+        padding-bottom:1em;
+    }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="particles-js"></div>
+
+    <div class="opacity-scroll"></div>
+    <div class="scroll-wrapper">
+        <section id="section03" class="demo">
+            <a href="#about"><span></span></a>
+        </section>
+    </div>
+    <div class="logo-home"></div>
+    <div class="spacer-home"></div>
+
+    <div class="container-fluid" id="about" style="padding:0;">
+        <div style="background: url('static/timerback.jpg'); background-repeat: no-repeat; background-size: cover; background-position: right; position: relative;">
+        <h1 class="display-4" style="padding-top:50px; font-family: 'Poiret One', cursive;">Prakarsh will begin in</h1>
+        <div class="clock" style="margin: 0 !important;width: fit-content;padding-top: 50px; padding-bottom: 100px;"></div>
+        <div class="scroll-opacity"></div>
+        </div>
+            <div class="container-fluid" style="padding:0; background: url('backsite4.jpg'); background-position: center; background-size: cover;">
+                <div class="container" style="padding-top:50px; padding-bottom: 2% ">
+                        <iframe width="100%" height="400px" src="https://www.youtube.com/embed/xpD7hlrlNtc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div>
+
+                    <h2 style="font-family: sans-serif;">About The Fest</h2>
+                    <h4 style="padding:1% 5%; font-family: sans-serif;">PRAKARSH, a National Level Technical Symposium to bring together the best brains in the country and give them a chance to showcase their skills and talents. This will give a platform for the students to interact and compete with each other. There are non-technical events too to incorporate fun activities alongside the technical fervour.</h4>
+                </div>
+
+                <div class="container" style="padding-top:60px; padding-bottom: 20px;">
+                        <div class="row" id="event-icons01" style="padding-bottom:20px; text-align:center;">
+                          <div class="col"><i class="fas fa-cog" style="font-size:2.5em;"></i><br>7<br>Workshops</div>
+                          <div class="col"><i class="fas fa-desktop" style="font-size:2.5em;"></i><br>21<br>Tech</div>
+                          <div class="col"><i class="fas fa-trophy" style="font-size:2.5em;"></i><br>8<br>Non-Tech</div>
+                          <div class="col"><i class="fas fa-atom" style="font-size:2.5em;"></i><br>5 Guest Lectures</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="events-blur"></div>
+    <div class="container-fluid" id="events-container" style="padding:3% 6%; background: url('backsite5.jpg'); background-position: center; background-size: cover;">
+        <h3 id="events-heading">EVENTS</h3>
+        <div class="row">
+            <div class="col-sm" id="col-left">
+                <a href="Events/cim.html" class="img-1" id="img-01"><span></span></a>
+            </div>
+            <div class="col-sm" id="col-mid">
+                <a href="Events/civil.html" class="img-2" id="img-02"><span></span></a>
+            </div>
+            <div class="col-sm" id="col-mid">
+                <a href="Events/robotics.html" class="img-1" id="img-03"><span></span></a>
+            </div>
+            <div class="col-sm" id="col-right">
+                <a href="Events/ancillary.html" class="img-2" id="img-04"><span></span></a>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-sm" id="col-left">
+                    <a href="Events/funtastic.html" class="img-2" id="img-05"><span></span></a>
+                </div>
+                <div class="col-sm" id="col-mid">
+                    <a href="Events/wheelsandwings.html" class="img-1" id="img-06"><span></span></a>
+                </div>
+                <div class="col-sm" id="col-mid">
+                    <a href="Events/workshops.html" class="img-2" id="img-07"><span></span></a>
+                </div>
+                <div class="col-sm" id="col-right">
+                    <a href="Events/eie.html" class="img-1" id="img-08"><span></span></a>
+                </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="guests-container">
+        <div class="container-fluid" id="guests-heading">
+            <h1 class="guest-shadow" style="padding-top:  3.5%; padding-left: 13%; font-family: sans-serif">GUESTS</h1>
+        </div>
+        <div class="container-fluid" id="guests-showcase-wrapper">
+            <div class="container-fluid" id="guests-showcase-info">
+                <div class="showcase-info-fade nav">
+                    <div style="height:300px;">
+                        <h1 class="display-4" style="font-weight: 400; margin-bottom:0px;">Aariz Saiyed</h1>
+                        <p>A 25-year old multi-talented guy who is a musician, stand-up comedian, an actor and a film-maker. He plays a vital role in making The Comedy Factory Youtube videos.</p>
+                        <div class="guests-nav-res" style="height: 30px; width: 75px; margin-top: 30px;">
+                            <button class="appendarrowprev slick-prev slick-arrow hidden-1" aria-label="Previous" type="button" id="nav-res-01"></button>
+                            <button class="appendarrownext slick-next slick-arrow hidden-1" aria-label="Next" type="button" id="nav-res-02"></button>
+                        </div>
+                    </div>
+                    <div style="height:260px;">
+                        <h1 class="display-4" style="font-weight: 400; margin-bottom:0px;">Aniruddha Tambe</h1>
+                        <p>Prof. Aniruddha Tambe has 28 years of professional experience in diverse fields. He is associated with Parul Institute of Management since Nov 2009 and brings with him a rich experience and industry exposure of 21 years in marketing and sales.</p>
+                        <div class="guests-nav-res" style="height: 30px; width: 75px; margin-top: 30px;">
+                                <button class="appendarrowprev slick-prev slick-arrow hidden-1" aria-label="Previous" type="button" id="nav-res-01"></button>
+                                <button class="appendarrownext slick-next slick-arrow hidden-1" aria-label="Next" type="button" id="nav-res-02"></button>
+                        </div>
+                    </div>
+                    <div style="height:260px;">
+                        <h1 class="display-4" style="font-weight: 400; margin-bottom:0px;">Shashi Ranjan</h1>
+                        <p>Joined Indian Air Force on 10 Jan 1992 as Air defender system operator. Retired on 31 Jan 2012 after completion of 20 years of initial engagement. During the service actively participated in Operation Rakshak, Operation Vijay(Kargil), Operation Parakram.</p>
+                        <div class="guests-nav-res" style="height: 30px; width: 75px; margin-top: 30px;">
+                                <button class="appendarrowprev slick-prev slick-arrow hidden-1" aria-label="Previous" type="button" id="nav-res-01"></button>
+                                <button class="appendarrownext slick-next slick-arrow hidden-1" aria-label="Next" type="button" id="nav-res-02"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guests-showcase">
+                <div id="bg-img1"></div>
+                <div id="bg-img2"></div>
+                <div id="bg-img3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="padding: 0% 0 2.5% 0; background-color: #e7e5e4; background-position: center; background-size: cover;">
+        <h1 class="display-4" style="
+        text-align: center;
+        width: 100%;
+        margin: auto; font-family: 'Poiret One', cursive; ">Sponsors</h1>
+        <div class="row" style="background-color: #ececec; background-color: rgba(233,230,230,0.79); padding: 2% 0; margin:50px 0px;">
+                <div class="container">
+                    <section class="customer-logos slider">
+                        <div class="slide"><a href="https://www.endeavorcareers.com" target="_blank"><img src="Website sponsors/1.png"></a></div>
+                        <div class="slide"><a href="https://www.icicibank.com" target="_blank"><img src="Website sponsors/2.png"></a></div>
+                        <div class="slide"><a href="http://icegateinstitute.com/" target="_blank"><img src="Website sponsors/3.png"></a></div>
+                        <div class="slide"><a href="https://www.radiocity.in" target="_blank"><img src="Website sponsors/4.png"></a></div>
+                        <div class="slide"><a href="https://www.facebook.com/outdoorhoardingmedia/" target="_blank"><img src="Website sponsors/5.png"></a></div>
+                        <div class="slide"><a href="https://www.greencodedigital.com" target="_blank"><img src="Website sponsors/6.png"></a></div>
+                        <div class="slide"><a href="https://www.justdial.com/Vadodara/Green-Tronics-Led-sing-board-manufacturer-Sama-Road/0265PX265-X265-140220174851-D2R3_BZDET" target="_blank"><img src="Website sponsors/7.png"></a></div>
+                        <div class="slide"><a href="http://balajigyms.com" target="_blank"><img src="Website sponsors/8.png"></a></div>
+                        <div class="slide"><a href="http://balajigyms.com" target="_blank"><img src="Website sponsors/9.png"></a></div>
+                        <div class="slide"><a href="#"><img src="Website sponsors/10.png"></a></div>
+                        <div class="slide"><a href="http://www.sparktodaynews.com" target="_blank"><img src="Website sponsors/11.png"></a></div>
+                        <div class="slide"><a href="https://happyfacesvadodara.com" target="_blank"><img src="Website sponsors/12.png"></a></div>
+                        <div class="slide"><a href="https://www.facebook.com/AapduVadodara/" target="_blank"><img src="Website sponsors/13.png"></a></div>
+                        <div class="slide"><a href="#"><img src="Website sponsors/14.png"></a></div>
+                        <div class="slide"><a href="https://www.facebook.com/7thgearbaroda/" target="_blank"><img src="Website sponsors/15.png"></a></div>
+                        <div class="slide"><a href="#"><img src="Website sponsors/16.png"></a></div>
+                        <div class="slide"><a href="http://microhub.in" target="_blank"><img src="Website sponsors/17.png"></a></div>
+                    </section>
+                </div>
+            </div>
+    </div>
+    <div class="container-fluid" style="background:#425664; color:white; margin-bottom: 20px;">
+        <div class="row" style="padding:50px 20px;">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    			<div class="info">
+    				<h1 style="margin-bottom:1.5rem;"> Prakarsh XIV </h1>
+    				<h5 style="margin-bottom:1rem;"> SVIT, Vasad </h5>
+    				<table>
+    					<tbody><tr>
+    						<th> Location </th>
+    						<th> : </th>
+    						<th style="text-align: right"> Sardar Vallbhbhai Patel Institute of Technology </th>
+    					</tr>
+    					<tr>
+    						<th> Street </th>
+    						<th> : </th>
+    						<th style="text-align: right"> SVIT Road, Rajupura Village </th>
+    					</tr>
+    					<tr>
+    						<th> City </th>
+    						<th> : </th>
+    						<th style="text-align: right"> Anand </th>
+    					</tr>
+    					<tr>
+    						<th> Pincode </th>
+    						<th> : </th>
+    						<th style="text-align: right"> 388306 </th>
+    					</tr>
+    					<tr>
+    						<th> Phone </th>
+    						<th> : </th>
+    						<th style="text-align: right"> +91-9723203935 </th>
+    					</tr>
+    				</tbody></table>
+    			</div>
+    		</div>
+            <div class="col-6" id="footer-responsive" style="text-align:right;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69498.52592097798!2d73.08169304664996!3d22.43279691393117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf7e43a3d29561b!2sSaradar+Vallabhbhai+Patel+Institute+of+Technology%2C+Vasad!5e0!3m2!1sen!2sin!4v1547661338731" width="100%" height="100%" frameborder="0" style="border:0; padding-right:0;" allowfullscreen></iframe></div>
+        </div>
+    </div> 
+    <footer>
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://www.facebook.com/PrakarshTechFest" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCKMMGkIUwMUokSbjgzb9OUw" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.instagram.com/prakarsh2019/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="tel:+919723203935"><i class="fas fa-phone"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-signoff">
+                All Rights Reserved &copy; Prakarsh XIV
+            </div>
+    </footer>
+    <script src="slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        if (window.matchMedia('(max-width: 768px)').matches)
+        {
+            $(document).ready(function () {
+            $('.guests-showcase').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.nav',
+                speed: 500,
+                dots: false,
+                infinite: true,
+                arrows: false,
+                autoplay:false,
+                fade:true,
+            });
+            $('.appendarrowprev').click(function(){
+                $('.guests-showcase').slick('slickPrev');
+            })
+            $('.appendarrownext').click(function(){
+                $('.guests-showcase').slick('slickNext');
+            })
+        });
+        $(document).ready(function () {
+            $('.showcase-info-fade').slick({
+                dots: false,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                });
+            });
+        }
+        else{
+            $(document).ready(function () {
+            $('.guests-showcase').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                asNavFor: '.nav',
+                speed: 500,
+                dots: false,
+                infinite: true,
+                arrows: true,
+                autoplay:false,
+                fade:true
+            });
+        });
+        $(document).ready(function () {
+            $('.showcase-info-fade').slick({
+                dots: false,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                });
+            });
+        }
+    </script>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('.customer-logos').slick({
+				slidesToShow: 6,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+					pauseOnHover: false,
+					responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 4
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 3
+					}
+				}]
+			});
+		});
+	</script>
+    <script type="text/javascript">
+        var clock;
+
+        $(document).ready(function() {
+
+            // Grab the current date
+            var currentDate = new Date();
+
+            // Set some date in the future. In this case, it's always Jan 1
+            var futureDate  = new Date(currentDate.getFullYear(), 0, 400, 14, 15);
+
+            // Calculate the difference in seconds between the future and current date
+            var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+            // Instantiate a countdown FlipClock
+            clock = $('.clock').FlipClock(diff, {
+                clockFace: 'DailyCounter',
+                countdown: true
+            });
+        });
+    </script>
+    <script>
+        /* -----------------------------------------------
+        /* Author : Vincent Garreau  - vincentgarreau.com
+        /* MIT license: http://opensource.org/licenses/MIT
+        /* Demo / Generator : vincentgarreau.com/particles.js
+        /* GitHub : github.com/VincentGarreau/particles.js
+        /* How to use? : Check the GitHub README
+        /* v2.0.0
+        /* ----------------------------------------------- */
+        function hexToRgb(e) {
+            var a = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+            e = e.replace(a, function (e, a, t, i) {
+                return a + a + t + t + i + i
+            });
+            var t = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e);
+            return t ? {
+                r: parseInt(t[1], 16),
+                g: parseInt(t[2], 16),
+                b: parseInt(t[3], 16)
+            } : null
+        }
+
+        function clamp(e, a, t) {
+            return Math.min(Math.max(e, a), t)
+        }
+
+        function isInArray(e, a) {
+            return a.indexOf(e) > -1
+        }
+        var pJS = function (e, a) {
+            var t = document.querySelector("#" + e + " > .particles-js-canvas-el");
+            this.pJS = {
+                canvas: {
+                    el: t,
+                    w: t.offsetWidth,
+                    h: t.offsetHeight
+                },
+                particles: {
+                    number: {
+                        value: 400,
+                        density: {
+                            enable: !0,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: "#fff"
+                    },
+                    shape: {
+                        type: "circle",
+                        stroke: {
+                            width: 0,
+                            color: "#ff0000"
+                        },
+                        polygon: {
+                            nb_sides: 5
+                        },
+                        image: {
+                            src: "",
+                            width: 100,
+                            height: 100
+                        }
+                    },
+                    opacity: {
+                        value: 1,
+                        random: !1,
+                        anim: {
+                            enable: !1,
+                            speed: 2,
+                            opacity_min: 0,
+                            sync: !1
+                        }
+                    },
+                    size: {
+                        value: 20,
+                        random: !1,
+                        anim: {
+                            enable: !1,
+                            speed: 20,
+                            size_min: 0,
+                            sync: !1
+                        }
+                    },
+                    line_linked: {
+                        enable: !0,
+                        distance: 100,
+                        color: "#fff",
+                        opacity: 1,
+                        width: 1
+                    },
+                    move: {
+                        enable: !0,
+                        speed: 2,
+                        direction: "none",
+                        random: !1,
+                        straight: !1,
+                        out_mode: "out",
+                        bounce: !1,
+                        attract: {
+                            enable: !1,
+                            rotateX: 3e3,
+                            rotateY: 3e3
+                        }
+                    },
+                    array: []
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: {
+                            enable: !0,
+                            mode: "grab"
+                        },
+                        onclick: {
+                            enable: !0,
+                            mode: "push"
+                        },
+                        resize: !0
+                    },
+                    modes: {
+                        grab: {
+                            distance: 100,
+                            line_linked: {
+                                opacity: 1
+                            }
+                        },
+                        bubble: {
+                            distance: 200,
+                            size: 80,
+                            duration: .4
+                        },
+                        repulse: {
+                            distance: 200,
+                            duration: .4
+                        },
+                        push: {
+                            particles_nb: 4
+                        },
+                        remove: {
+                            particles_nb: 2
+                        }
+                    },
+                    mouse: {}
+                },
+                retina_detect: !1,
+                fn: {
+                    interact: {},
+                    modes: {},
+                    vendors: {}
+                },
+                tmp: {}
+            };
+            var i = this.pJS;
+            a && Object.deepExtend(i, a), i.tmp.obj = {
+                size_value: i.particles.size.value,
+                size_anim_speed: i.particles.size.anim.speed,
+                move_speed: i.particles.move.speed,
+                line_linked_distance: i.particles.line_linked.distance,
+                line_linked_width: i.particles.line_linked.width,
+                mode_grab_distance: i.interactivity.modes.grab.distance,
+                mode_bubble_distance: i.interactivity.modes.bubble.distance,
+                mode_bubble_size: i.interactivity.modes.bubble.size,
+                mode_repulse_distance: i.interactivity.modes.repulse.distance
+            }, i.fn.retinaInit = function () {
+                i.retina_detect && window.devicePixelRatio > 1 ? (i.canvas.pxratio = window.devicePixelRatio, i.tmp.retina = !0) : (i.canvas.pxratio = 1, i.tmp.retina = !1), i.canvas.w = i.canvas.el.offsetWidth * i.canvas.pxratio, i.canvas.h = i.canvas.el.offsetHeight * i.canvas.pxratio, i.particles.size.value = i.tmp.obj.size_value * i.canvas.pxratio, i.particles.size.anim.speed = i.tmp.obj.size_anim_speed * i.canvas.pxratio, i.particles.move.speed = i.tmp.obj.move_speed * i.canvas.pxratio, i.particles.line_linked.distance = i.tmp.obj.line_linked_distance * i.canvas.pxratio, i.interactivity.modes.grab.distance = i.tmp.obj.mode_grab_distance * i.canvas.pxratio, i.interactivity.modes.bubble.distance = i.tmp.obj.mode_bubble_distance * i.canvas.pxratio, i.particles.line_linked.width = i.tmp.obj.line_linked_width * i.canvas.pxratio, i.interactivity.modes.bubble.size = i.tmp.obj.mode_bubble_size * i.canvas.pxratio, i.interactivity.modes.repulse.distance = i.tmp.obj.mode_repulse_distance * i.canvas.pxratio
+            }, i.fn.canvasInit = function () {
+                i.canvas.ctx = i.canvas.el.getContext("2d")
+            }, i.fn.canvasSize = function () {
+                i.canvas.el.width = i.canvas.w, i.canvas.el.height = i.canvas.h, i && i.interactivity.events.resize && window.addEventListener("resize", function () {
+                    i.canvas.w = i.canvas.el.offsetWidth, i.canvas.h = i.canvas.el.offsetHeight, i.tmp.retina && (i.canvas.w *= i.canvas.pxratio, i.canvas.h *= i.canvas.pxratio), i.canvas.el.width = i.canvas.w, i.canvas.el.height = i.canvas.h, i.particles.move.enable || (i.fn.particlesEmpty(), i.fn.particlesCreate(), i.fn.particlesDraw(), i.fn.vendors.densityAutoParticles()), i.fn.vendors.densityAutoParticles()
+                })
+            }, i.fn.canvasPaint = function () {
+                i.canvas.ctx.fillRect(0, 0, i.canvas.w, i.canvas.h)
+            }, i.fn.canvasClear = function () {
+                i.canvas.ctx.clearRect(0, 0, i.canvas.w, i.canvas.h)
+            }, i.fn.particle = function (e, a, t) {
+                if (this.radius = (i.particles.size.random ? Math.random() : 1) * i.particles.size.value, i.particles.size.anim.enable && (this.size_status = !1, this.vs = i.particles.size.anim.speed / 100, i.particles.size.anim.sync || (this.vs = this.vs * Math.random())), this.x = t ? t.x : Math.random() * i.canvas.w, this.y = t ? t.y : Math.random() * i.canvas.h, this.x > i.canvas.w - 2 * this.radius ? this.x = this.x - this.radius : this.x < 2 * this.radius && (this.x = this.x + this.radius), this.y > i.canvas.h - 2 * this.radius ? this.y = this.y - this.radius : this.y < 2 * this.radius && (this.y = this.y + this.radius), i.particles.move.bounce && i.fn.vendors.checkOverlap(this, t), this.color = {}, "object" == typeof e.value)
+                    if (e.value instanceof Array) {
+                        var s = e.value[Math.floor(Math.random() * i.particles.color.value.length)];
+                        this.color.rgb = hexToRgb(s)
+                    } else void 0 != e.value.r && void 0 != e.value.g && void 0 != e.value.b && (this.color.rgb = {
+                        r: e.value.r,
+                        g: e.value.g,
+                        b: e.value.b
+                    }), void 0 != e.value.h && void 0 != e.value.s && void 0 != e.value.l && (this.color.hsl = {
+                        h: e.value.h,
+                        s: e.value.s,
+                        l: e.value.l
+                    });
+                else "random" == e.value ? this.color.rgb = {
+                    r: Math.floor(256 * Math.random()) + 0,
+                    g: Math.floor(256 * Math.random()) + 0,
+                    b: Math.floor(256 * Math.random()) + 0
+                } : "string" == typeof e.value && (this.color = e, this.color.rgb = hexToRgb(this.color.value));
+                this.opacity = (i.particles.opacity.random ? Math.random() : 1) * i.particles.opacity.value, i.particles.opacity.anim.enable && (this.opacity_status = !1, this.vo = i.particles.opacity.anim.speed / 100, i.particles.opacity.anim.sync || (this.vo = this.vo * Math.random()));
+                var n = {};
+                switch (i.particles.move.direction) {
+                    case "top":
+                        n = {
+                            x: 0,
+                            y: -1
+                        };
+                        break;
+                    case "top-right":
+                        n = {
+                            x: .5,
+                            y: -.5
+                        };
+                        break;
+                    case "right":
+                        n = {
+                            x: 1,
+                            y: -0
+                        };
+                        break;
+                    case "bottom-right":
+                        n = {
+                            x: .5,
+                            y: .5
+                        };
+                        break;
+                    case "bottom":
+                        n = {
+                            x: 0,
+                            y: 1
+                        };
+                        break;
+                    case "bottom-left":
+                        n = {
+                            x: -.5,
+                            y: 1
+                        };
+                        break;
+                    case "left":
+                        n = {
+                            x: -1,
+                            y: 0
+                        };
+                        break;
+                    case "top-left":
+                        n = {
+                            x: -.5,
+                            y: -.5
+                        };
+                        break;
+                    default:
+                        n = {
+                            x: 0,
+                            y: 0
+                        }
+                }
+                i.particles.move.straight ? (this.vx = n.x, this.vy = n.y, i.particles.move.random && (this.vx = this.vx * Math.random(), this.vy = this.vy * Math.random())) : (this.vx = n.x + Math.random() - .5, this.vy = n.y + Math.random() - .5), this.vx_i = this.vx, this.vy_i = this.vy;
+                var r = i.particles.shape.type;
+                if ("object" == typeof r) {
+                    if (r instanceof Array) {
+                        var c = r[Math.floor(Math.random() * r.length)];
+                        this.shape = c
+                    }
+                } else this.shape = r;
+                if ("image" == this.shape) {
+                    var o = i.particles.shape;
+                    this.img = {
+                        src: o.image.src,
+                        ratio: o.image.width / o.image.height
+                    }, this.img.ratio || (this.img.ratio = 1), "svg" == i.tmp.img_type && void 0 != i.tmp.source_svg && (i.fn.vendors.createSvgImg(this), i.tmp.pushing && (this.img.loaded = !1))
+                }
+            }, i.fn.particle.prototype.draw = function () {
+                function e() {
+                    i.canvas.ctx.drawImage(r, a.x - t, a.y - t, 2 * t, 2 * t / a.img.ratio)
+                }
+                var a = this;
+                if (void 0 != a.radius_bubble) var t = a.radius_bubble;
+                else var t = a.radius;
+                if (void 0 != a.opacity_bubble) var s = a.opacity_bubble;
+                else var s = a.opacity;
+                if (a.color.rgb) var n = "rgba(" + a.color.rgb.r + "," + a.color.rgb.g + "," + a.color.rgb.b + "," + s + ")";
+                else var n = "hsla(" + a.color.hsl.h + "," + a.color.hsl.s + "%," + a.color.hsl.l + "%," + s + ")";
+                switch (i.canvas.ctx.fillStyle = n, i.canvas.ctx.beginPath(), a.shape) {
+                    case "circle":
+                        i.canvas.ctx.arc(a.x, a.y, t, 0, 2 * Math.PI, !1);
+                        break;
+                    case "edge":
+                        i.canvas.ctx.rect(a.x - t, a.y - t, 2 * t, 2 * t);
+                        break;
+                    case "triangle":
+                        i.fn.vendors.drawShape(i.canvas.ctx, a.x - t, a.y + t / 1.66, 2 * t, 3, 2);
+                        break;
+                    case "polygon":
+                        i.fn.vendors.drawShape(i.canvas.ctx, a.x - t / (i.particles.shape.polygon.nb_sides / 3.5), a.y - t / .76, 2.66 * t / (i.particles.shape.polygon.nb_sides / 3), i.particles.shape.polygon.nb_sides, 1);
+                        break;
+                    case "star":
+                        i.fn.vendors.drawShape(i.canvas.ctx, a.x - 2 * t / (i.particles.shape.polygon.nb_sides / 4), a.y - t / 1.52, 2 * t * 2.66 / (i.particles.shape.polygon.nb_sides / 3), i.particles.shape.polygon.nb_sides, 2);
+                        break;
+                    case "image":
+                        if ("svg" == i.tmp.img_type) var r = a.img.obj;
+                        else var r = i.tmp.img_obj;
+                        r && e()
+                }
+                i.canvas.ctx.closePath(), i.particles.shape.stroke.width > 0 && (i.canvas.ctx.strokeStyle = i.particles.shape.stroke.color, i.canvas.ctx.lineWidth = i.particles.shape.stroke.width, i.canvas.ctx.stroke()), i.canvas.ctx.fill()
+            }, i.fn.particlesCreate = function () {
+                for (var e = 0; e < i.particles.number.value; e++) i.particles.array.push(new i.fn.particle(i.particles.color, i.particles.opacity.value))
+            }, i.fn.particlesUpdate = function () {
+                for (var e = 0; e < i.particles.array.length; e++) {
+                    var a = i.particles.array[e];
+                    if (i.particles.move.enable) {
+                        var t = i.particles.move.speed / 2;
+                        a.x += a.vx * t, a.y += a.vy * t
+                    }
+                    if (i.particles.opacity.anim.enable && (1 == a.opacity_status ? (a.opacity >= i.particles.opacity.value && (a.opacity_status = !1), a.opacity += a.vo) : (a.opacity <= i.particles.opacity.anim.opacity_min && (a.opacity_status = !0), a.opacity -= a.vo), a.opacity < 0 && (a.opacity = 0)), i.particles.size.anim.enable && (1 == a.size_status ? (a.radius >= i.particles.size.value && (a.size_status = !1), a.radius += a.vs) : (a.radius <= i.particles.size.anim.size_min && (a.size_status = !0), a.radius -= a.vs), a.radius < 0 && (a.radius = 0)), "bounce" == i.particles.move.out_mode) var s = {
+                        x_left: a.radius,
+                        x_right: i.canvas.w,
+                        y_top: a.radius,
+                        y_bottom: i.canvas.h
+                    };
+                    else var s = {
+                        x_left: -a.radius,
+                        x_right: i.canvas.w + a.radius,
+                        y_top: -a.radius,
+                        y_bottom: i.canvas.h + a.radius
+                    };
+                    switch (a.x - a.radius > i.canvas.w ? (a.x = s.x_left, a.y = Math.random() * i.canvas.h) : a.x + a.radius < 0 && (a.x = s.x_right, a.y = Math.random() * i.canvas.h), a.y - a.radius > i.canvas.h ? (a.y = s.y_top, a.x = Math.random() * i.canvas.w) : a.y + a.radius < 0 && (a.y = s.y_bottom, a.x = Math.random() * i.canvas.w), i.particles.move.out_mode) {
+                        case "bounce":
+                            a.x + a.radius > i.canvas.w ? a.vx = -a.vx : a.x - a.radius < 0 && (a.vx = -a.vx), a.y + a.radius > i.canvas.h ? a.vy = -a.vy : a.y - a.radius < 0 && (a.vy = -a.vy)
+                    }
+                    if (isInArray("grab", i.interactivity.events.onhover.mode) && i.fn.modes.grabParticle(a), (isInArray("bubble", i.interactivity.events.onhover.mode) || isInArray("bubble", i.interactivity.events.onclick.mode)) && i.fn.modes.bubbleParticle(a), (isInArray("repulse", i.interactivity.events.onhover.mode) || isInArray("repulse", i.interactivity.events.onclick.mode)) && i.fn.modes.repulseParticle(a), i.particles.line_linked.enable || i.particles.move.attract.enable)
+                        for (var n = e + 1; n < i.particles.array.length; n++) {
+                            var r = i.particles.array[n];
+                            i.particles.line_linked.enable && i.fn.interact.linkParticles(a, r), i.particles.move.attract.enable && i.fn.interact.attractParticles(a, r), i.particles.move.bounce && i.fn.interact.bounceParticles(a, r)
+                        }
+                }
+            }, i.fn.particlesDraw = function () {
+                i.canvas.ctx.clearRect(0, 0, i.canvas.w, i.canvas.h), i.fn.particlesUpdate();
+                for (var e = 0; e < i.particles.array.length; e++) {
+                    var a = i.particles.array[e];
+                    a.draw()
+                }
+            }, i.fn.particlesEmpty = function () {
+                i.particles.array = []
+            }, i.fn.particlesRefresh = function () {
+                cancelRequestAnimFrame(i.fn.checkAnimFrame), cancelRequestAnimFrame(i.fn.drawAnimFrame), i.tmp.source_svg = void 0, i.tmp.img_obj = void 0, i.tmp.count_svg = 0, i.fn.particlesEmpty(), i.fn.canvasClear(), i.fn.vendors.start()
+            }, i.fn.interact.linkParticles = function (e, a) {
+                var t = e.x - a.x,
+                    s = e.y - a.y,
+                    n = Math.sqrt(t * t + s * s);
+                if (n <= i.particles.line_linked.distance) {
+                    var r = i.particles.line_linked.opacity - n / (1 / i.particles.line_linked.opacity) / i.particles.line_linked.distance;
+                    if (r > 0) {
+                        var c = i.particles.line_linked.color_rgb_line;
+                        i.canvas.ctx.strokeStyle = "rgba(" + c.r + "," + c.g + "," + c.b + "," + r + ")", i.canvas.ctx.lineWidth = i.particles.line_linked.width, i.canvas.ctx.beginPath(), i.canvas.ctx.moveTo(e.x, e.y), i.canvas.ctx.lineTo(a.x, a.y), i.canvas.ctx.stroke(), i.canvas.ctx.closePath()
+                    }
+                }
+            }, i.fn.interact.attractParticles = function (e, a) {
+                var t = e.x - a.x,
+                    s = e.y - a.y,
+                    n = Math.sqrt(t * t + s * s);
+                if (n <= i.particles.line_linked.distance) {
+                    var r = t / (1e3 * i.particles.move.attract.rotateX),
+                        c = s / (1e3 * i.particles.move.attract.rotateY);
+                    e.vx -= r, e.vy -= c, a.vx += r, a.vy += c
+                }
+            }, i.fn.interact.bounceParticles = function (e, a) {
+                var t = e.x - a.x,
+                    i = e.y - a.y,
+                    s = Math.sqrt(t * t + i * i),
+                    n = e.radius + a.radius;
+                n >= s && (e.vx = -e.vx, e.vy = -e.vy, a.vx = -a.vx, a.vy = -a.vy)
+            }, i.fn.modes.pushParticles = function (e, a) {
+                i.tmp.pushing = !0;
+                for (var t = 0; e > t; t++) i.particles.array.push(new i.fn.particle(i.particles.color, i.particles.opacity.value, {
+                    x: a ? a.pos_x : Math.random() * i.canvas.w,
+                    y: a ? a.pos_y : Math.random() * i.canvas.h
+                })), t == e - 1 && (i.particles.move.enable || i.fn.particlesDraw(), i.tmp.pushing = !1)
+            }, i.fn.modes.removeParticles = function (e) {
+                i.particles.array.splice(0, e), i.particles.move.enable || i.fn.particlesDraw()
+            }, i.fn.modes.bubbleParticle = function (e) {
+                function a() {
+                    e.opacity_bubble = e.opacity, e.radius_bubble = e.radius
+                }
+
+                function t(a, t, s, n, c) {
+                    if (a != t)
+                        if (i.tmp.bubble_duration_end) {
+                            if (void 0 != s) {
+                                var o = n - p * (n - a) / i.interactivity.modes.bubble.duration,
+                                    l = a - o;
+                                d = a + l, "size" == c && (e.radius_bubble = d), "opacity" == c && (e.opacity_bubble = d)
+                            }
+                        } else if (r <= i.interactivity.modes.bubble.distance) {
+                            if (void 0 != s) var v = s;
+                            else var v = n;
+                            if (v != a) {
+                                var d = n - p * (n - a) / i.interactivity.modes.bubble.duration;
+                                "size" == c && (e.radius_bubble = d), "opacity" == c && (e.opacity_bubble = d)
+                            }
+                        } else "size" == c && (e.radius_bubble = void 0), "opacity" == c && (e.opacity_bubble = void 0)
+                }
+                if (i.interactivity.events.onhover.enable && isInArray("bubble", i.interactivity.events.onhover.mode)) {
+                    var s = e.x - i.interactivity.mouse.pos_x,
+                        n = e.y - i.interactivity.mouse.pos_y,
+                        r = Math.sqrt(s * s + n * n),
+                        c = 1 - r / i.interactivity.modes.bubble.distance;
+                    if (r <= i.interactivity.modes.bubble.distance) {
+                        if (c >= 0 && "mousemove" == i.interactivity.status) {
+                            if (i.interactivity.modes.bubble.size != i.particles.size.value)
+                                if (i.interactivity.modes.bubble.size > i.particles.size.value) {
+                                    var o = e.radius + i.interactivity.modes.bubble.size * c;
+                                    o >= 0 && (e.radius_bubble = o)
+                                } else {
+                                    var l = e.radius - i.interactivity.modes.bubble.size,
+                                        o = e.radius - l * c;
+                                    o > 0 ? e.radius_bubble = o : e.radius_bubble = 0
+                                }
+                            if (i.interactivity.modes.bubble.opacity != i.particles.opacity.value)
+                                if (i.interactivity.modes.bubble.opacity > i.particles.opacity.value) {
+                                    var v = i.interactivity.modes.bubble.opacity * c;
+                                    v > e.opacity && v <= i.interactivity.modes.bubble.opacity && (e.opacity_bubble = v)
+                                } else {
+                                    var v = e.opacity - (i.particles.opacity.value - i.interactivity.modes.bubble.opacity) * c;
+                                    v < e.opacity && v >= i.interactivity.modes.bubble.opacity && (e.opacity_bubble = v)
+                                }
+                        }
+                    } else a();
+                    "mouseleave" == i.interactivity.status && a()
+                } else if (i.interactivity.events.onclick.enable && isInArray("bubble", i.interactivity.events.onclick.mode)) {
+                    if (i.tmp.bubble_clicking) {
+                        var s = e.x - i.interactivity.mouse.click_pos_x,
+                            n = e.y - i.interactivity.mouse.click_pos_y,
+                            r = Math.sqrt(s * s + n * n),
+                            p = ((new Date).getTime() - i.interactivity.mouse.click_time) / 1e3;
+                        p > i.interactivity.modes.bubble.duration && (i.tmp.bubble_duration_end = !0), p > 2 * i.interactivity.modes.bubble.duration && (i.tmp.bubble_clicking = !1, i.tmp.bubble_duration_end = !1)
+                    }
+                    i.tmp.bubble_clicking && (t(i.interactivity.modes.bubble.size, i.particles.size.value, e.radius_bubble, e.radius, "size"), t(i.interactivity.modes.bubble.opacity, i.particles.opacity.value, e.opacity_bubble, e.opacity, "opacity"))
+                }
+            }, i.fn.modes.repulseParticle = function (e) {
+                function a() {
+                    var a = Math.atan2(d, p);
+                    if (e.vx = u * Math.cos(a), e.vy = u * Math.sin(a), "bounce" == i.particles.move.out_mode) {
+                        var t = {
+                            x: e.x + e.vx,
+                            y: e.y + e.vy
+                        };
+                        t.x + e.radius > i.canvas.w ? e.vx = -e.vx : t.x - e.radius < 0 && (e.vx = -e.vx), t.y + e.radius > i.canvas.h ? e.vy = -e.vy : t.y - e.radius < 0 && (e.vy = -e.vy)
+                    }
+                }
+                if (i.interactivity.events.onhover.enable && isInArray("repulse", i.interactivity.events.onhover.mode) && "mousemove" == i.interactivity.status) {
+                    var t = e.x - i.interactivity.mouse.pos_x,
+                        s = e.y - i.interactivity.mouse.pos_y,
+                        n = Math.sqrt(t * t + s * s),
+                        r = {
+                            x: t / n,
+                            y: s / n
+                        },
+                        c = i.interactivity.modes.repulse.distance,
+                        o = 100,
+                        l = clamp(1 / c * (-1 * Math.pow(n / c, 2) + 1) * c * o, 0, 50),
+                        v = {
+                            x: e.x + r.x * l,
+                            y: e.y + r.y * l
+                        };
+                    "bounce" == i.particles.move.out_mode ? (v.x - e.radius > 0 && v.x + e.radius < i.canvas.w && (e.x = v.x), v.y - e.radius > 0 && v.y + e.radius < i.canvas.h && (e.y = v.y)) : (e.x = v.x, e.y = v.y)
+                } else if (i.interactivity.events.onclick.enable && isInArray("repulse", i.interactivity.events.onclick.mode))
+                    if (i.tmp.repulse_finish || (i.tmp.repulse_count++ , i.tmp.repulse_count == i.particles.array.length && (i.tmp.repulse_finish = !0)), i.tmp.repulse_clicking) {
+                        var c = Math.pow(i.interactivity.modes.repulse.distance / 6, 3),
+                            p = i.interactivity.mouse.click_pos_x - e.x,
+                            d = i.interactivity.mouse.click_pos_y - e.y,
+                            m = p * p + d * d,
+                            u = -c / m * 1;
+                        c >= m && a()
+                    } else 0 == i.tmp.repulse_clicking && (e.vx = e.vx_i, e.vy = e.vy_i)
+            }, i.fn.modes.grabParticle = function (e) {
+                if (i.interactivity.events.onhover.enable && "mousemove" == i.interactivity.status) {
+                    var a = e.x - i.interactivity.mouse.pos_x,
+                        t = e.y - i.interactivity.mouse.pos_y,
+                        s = Math.sqrt(a * a + t * t);
+                    if (s <= i.interactivity.modes.grab.distance) {
+                        var n = i.interactivity.modes.grab.line_linked.opacity - s / (1 / i.interactivity.modes.grab.line_linked.opacity) / i.interactivity.modes.grab.distance;
+                        if (n > 0) {
+                            var r = i.particles.line_linked.color_rgb_line;
+                            i.canvas.ctx.strokeStyle = "rgba(" + r.r + "," + r.g + "," + r.b + "," + n + ")", i.canvas.ctx.lineWidth = i.particles.line_linked.width, i.canvas.ctx.beginPath(), i.canvas.ctx.moveTo(e.x, e.y), i.canvas.ctx.lineTo(i.interactivity.mouse.pos_x, i.interactivity.mouse.pos_y), i.canvas.ctx.stroke(), i.canvas.ctx.closePath()
+                        }
+                    }
+                }
+            }, i.fn.vendors.eventsListeners = function () {
+                "window" == i.interactivity.detect_on ? i.interactivity.el = window : i.interactivity.el = i.canvas.el, (i.interactivity.events.onhover.enable || i.interactivity.events.onclick.enable) && (i.interactivity.el.addEventListener("mousemove", function (e) {
+                    if (i.interactivity.el == window) var a = e.clientX,
+                        t = e.clientY;
+                    else var a = e.offsetX || e.clientX,
+                        t = e.offsetY || e.clientY;
+                    i.interactivity.mouse.pos_x = a, i.interactivity.mouse.pos_y = t, i.tmp.retina && (i.interactivity.mouse.pos_x *= i.canvas.pxratio, i.interactivity.mouse.pos_y *= i.canvas.pxratio), i.interactivity.status = "mousemove"
+                }), i.interactivity.el.addEventListener("mouseleave", function (e) {
+                    i.interactivity.mouse.pos_x = null, i.interactivity.mouse.pos_y = null, i.interactivity.status = "mouseleave"
+                })), i.interactivity.events.onclick.enable && i.interactivity.el.addEventListener("click", function () {
+                    if (i.interactivity.mouse.click_pos_x = i.interactivity.mouse.pos_x, i.interactivity.mouse.click_pos_y = i.interactivity.mouse.pos_y, i.interactivity.mouse.click_time = (new Date).getTime(), i.interactivity.events.onclick.enable) switch (i.interactivity.events.onclick.mode) {
+                        case "push":
+                            i.particles.move.enable ? i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb, i.interactivity.mouse) : 1 == i.interactivity.modes.push.particles_nb ? i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb, i.interactivity.mouse) : i.interactivity.modes.push.particles_nb > 1 && i.fn.modes.pushParticles(i.interactivity.modes.push.particles_nb);
+                            break;
+                        case "remove":
+                            i.fn.modes.removeParticles(i.interactivity.modes.remove.particles_nb);
+                            break;
+                        case "bubble":
+                            i.tmp.bubble_clicking = !0;
+                            break;
+                        case "repulse":
+                            i.tmp.repulse_clicking = !0, i.tmp.repulse_count = 0, i.tmp.repulse_finish = !1, setTimeout(function () {
+                                i.tmp.repulse_clicking = !1
+                            }, 1e3 * i.interactivity.modes.repulse.duration)
+                    }
+                })
+            }, i.fn.vendors.densityAutoParticles = function () {
+                if (i.particles.number.density.enable) {
+                    var e = i.canvas.el.width * i.canvas.el.height / 1e3;
+                    i.tmp.retina && (e /= 2 * i.canvas.pxratio);
+                    var a = e * i.particles.number.value / i.particles.number.density.value_area,
+                        t = i.particles.array.length - a;
+                    0 > t ? i.fn.modes.pushParticles(Math.abs(t)) : i.fn.modes.removeParticles(t)
+                }
+            }, i.fn.vendors.checkOverlap = function (e, a) {
+                for (var t = 0; t < i.particles.array.length; t++) {
+                    var s = i.particles.array[t],
+                        n = e.x - s.x,
+                        r = e.y - s.y,
+                        c = Math.sqrt(n * n + r * r);
+                    c <= e.radius + s.radius && (e.x = a ? a.x : Math.random() * i.canvas.w, e.y = a ? a.y : Math.random() * i.canvas.h, i.fn.vendors.checkOverlap(e))
+                }
+            }, i.fn.vendors.createSvgImg = function (e) {
+                var a = i.tmp.source_svg,
+                    t = /#([0-9A-F]{3,6})/gi,
+                    s = a.replace(t, function (a, t, i, s) {
+                        if (e.color.rgb) var n = "rgba(" + e.color.rgb.r + "," + e.color.rgb.g + "," + e.color.rgb.b + "," + e.opacity + ")";
+                        else var n = "hsla(" + e.color.hsl.h + "," + e.color.hsl.s + "%," + e.color.hsl.l + "%," + e.opacity + ")";
+                        return n
+                    }),
+                    n = new Blob([s], {
+                        type: "image/svg+xml;charset=utf-8"
+                    }),
+                    r = window.URL || window.webkitURL || window,
+                    c = r.createObjectURL(n),
+                    o = new Image;
+                o.addEventListener("load", function () {
+                    e.img.obj = o, e.img.loaded = !0, r.revokeObjectURL(c), i.tmp.count_svg++
+                }), o.src = c
+            }, i.fn.vendors.destroypJS = function () {
+                cancelAnimationFrame(i.fn.drawAnimFrame), t.remove(), pJSDom = null
+            }, i.fn.vendors.drawShape = function (e, a, t, i, s, n) {
+                var r = s * n,
+                    c = s / n,
+                    o = 180 * (c - 2) / c,
+                    l = Math.PI - Math.PI * o / 180;
+                e.save(), e.beginPath(), e.translate(a, t), e.moveTo(0, 0);
+                for (var v = 0; r > v; v++) e.lineTo(i, 0), e.translate(i, 0), e.rotate(l);
+                e.fill(), e.restore()
+            }, i.fn.vendors.exportImg = function () {
+                window.open(i.canvas.el.toDataURL("image/png"), "_blank")
+            }, i.fn.vendors.loadImg = function (e) {
+                if (i.tmp.img_error = void 0, "" != i.particles.shape.image.src)
+                    if ("svg" == e) {
+                        var a = new XMLHttpRequest;
+                        a.open("GET", i.particles.shape.image.src), a.onreadystatechange = function (e) {
+                            4 == a.readyState && (200 == a.status ? (i.tmp.source_svg = e.currentTarget.response, i.fn.vendors.checkBeforeDraw()) : (console.log("Error pJS - Image not found"), i.tmp.img_error = !0))
+                        }, a.send()
+                    } else {
+                        var t = new Image;
+                        t.addEventListener("load", function () {
+                            i.tmp.img_obj = t, i.fn.vendors.checkBeforeDraw()
+                        }), t.src = i.particles.shape.image.src
+                    } else console.log("Error pJS - No image.src"), i.tmp.img_error = !0
+            }, i.fn.vendors.draw = function () {
+                "image" == i.particles.shape.type ? "svg" == i.tmp.img_type ? i.tmp.count_svg >= i.particles.number.value ? (i.fn.particlesDraw(), i.particles.move.enable ? i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw) : cancelRequestAnimFrame(i.fn.drawAnimFrame)) : i.tmp.img_error || (i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw)) : void 0 != i.tmp.img_obj ? (i.fn.particlesDraw(), i.particles.move.enable ? i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw) : cancelRequestAnimFrame(i.fn.drawAnimFrame)) : i.tmp.img_error || (i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw)) : (i.fn.particlesDraw(), i.particles.move.enable ? i.fn.drawAnimFrame = requestAnimFrame(i.fn.vendors.draw) : cancelRequestAnimFrame(i.fn.drawAnimFrame))
+            }, i.fn.vendors.checkBeforeDraw = function () {
+                "image" == i.particles.shape.type ? "svg" == i.tmp.img_type && void 0 == i.tmp.source_svg ? i.tmp.checkAnimFrame = requestAnimFrame(check) : (cancelRequestAnimFrame(i.tmp.checkAnimFrame), i.tmp.img_error || (i.fn.vendors.init(), i.fn.vendors.draw())) : (i.fn.vendors.init(), i.fn.vendors.draw())
+            }, i.fn.vendors.init = function () {
+                i.fn.retinaInit(), i.fn.canvasInit(), i.fn.canvasSize(), i.fn.canvasPaint(), i.fn.particlesCreate(), i.fn.vendors.densityAutoParticles(), i.particles.line_linked.color_rgb_line = hexToRgb(i.particles.line_linked.color)
+            }, i.fn.vendors.start = function () {
+                isInArray("image", i.particles.shape.type) ? (i.tmp.img_type = i.particles.shape.image.src.substr(i.particles.shape.image.src.length - 3), i.fn.vendors.loadImg(i.tmp.img_type)) : i.fn.vendors.checkBeforeDraw()
+            }, i.fn.vendors.eventsListeners(), i.fn.vendors.start()
+        };
+        Object.deepExtend = function (e, a) {
+            for (var t in a) a[t] && a[t].constructor && a[t].constructor === Object ? (e[t] = e[t] || {}, arguments.callee(e[t], a[t])) : e[t] = a[t];
+            return e
+        }, window.requestAnimFrame = function () {
+            return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (e) {
+                window.setTimeout(e, 1e3 / 60)
+            }
+        }(), window.cancelRequestAnimFrame = function () {
+            return window.cancelAnimationFrame || window.webkitCancelRequestAnimationFrame || window.mozCancelRequestAnimationFrame || window.oCancelRequestAnimationFrame || window.msCancelRequestAnimationFrame || clearTimeout
+        }(), window.pJSDom = [], window.particlesJS = function (e, a) {
+            "string" != typeof e && (a = e, e = "particles-js"), e || (e = "particles-js");
+            var t = document.getElementById(e),
+                i = "particles-js-canvas-el",
+                s = t.getElementsByClassName(i);
+            if (s.length)
+                for (; s.length > 0;) t.removeChild(s[0]);
+            var n = document.createElement("canvas");
+            n.className = i, n.style.width = "100%", n.style.height = "100%";
+            var r = document.getElementById(e).appendChild(n);
+            null != r && pJSDom.push(new pJS(e, a))
+        }, window.particlesJS.load = function (e, a, t) {
+            var i = new XMLHttpRequest;
+            i.open("GET", a), i.onreadystatechange = function (a) {
+                if (4 == i.readyState)
+                    if (200 == i.status) {
+                        var s = JSON.parse(a.currentTarget.response);
+                        window.particlesJS(e, s), t && t()
+                    } else console.log("Error pJS - XMLHttpRequest status: " + i.status), console.log("Error pJS - File config not found")
+            }, i.send()
+        };
+    </script>
+    <script>
+        particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 80, "density": {
+                            "enable": true, "value_area": 800
+                        }
+                    }
+                    , "color": {
+                        "value": "#333333"
+                    }
+                    , "shape": {
+                        "type": "circle", "stroke": {
+                            "width": 0, "color": "#333333"
+                        }
+                        , "polygon": {
+                            "nb_sides": 5
+                        }
+                        , "image": {
+                            "src": "img/github.svg", "width": 100, "height": 100
+                        }
+                    }
+                    , "opacity": {
+                        "value": 0.5, "random": false, "anim": {
+                            "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false
+                        }
+                    }
+                    , "size": {
+                        "value": 3, "random": true, "anim": {
+                            "enable": false, "speed": 40, "size_min": 0.1, "sync": false
+                        }
+                    }
+                    , "line_linked": {
+                        "enable": true, "distance": 150, "color": "#333333", "opacity": 0.4, "width": 1
+                    }
+                    , "move": {
+                        "enable": true, "speed": 1, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": {
+                            "enable": false, "rotateX": 600, "rotateY": 1200
+                        }
+                    }
+                }
+                , "interactivity": {
+                    "detect_on": "window", "events": {
+                        "onhover": {
+                            "enable": false, "mode": "repulse"
+                        }
+                        , "onclick": {
+                            "enable": false, "mode": "push"
+                        }
+                        , "resize": true
+                    }
+                    , "modes": {
+                        "grab": {
+                            "distance": 400, "line_linked": {
+                                "opacity": 1
+                            }
+                        }
+                        , "bubble": {
+                            "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3
+                        }
+                        , "repulse": {
+                            "distance": 200, "duration": 0.4
+                        }
+                        , "push": {
+                            "particles_nb": 4
+                        }
+                        , "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                }
+                , "retina_detect": true
+            }
+
+            );
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>

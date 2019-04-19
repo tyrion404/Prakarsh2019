@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://s.bootsnipp.com/iframe/N6mP6 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>circular tabs - Bootsnipp.com</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+/* written by riliwan balogun http://www.facebook.com/riliwan.rabo*/
+
+h4, h5, h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.event .board{
+    width: 100%;
+margin: 40px auto;
+height: 500px;
+background: transparent;
+/*box-shadow: 10px 10px #ccc,-10px 20px #ddd;*/
+}
+.event .board .nav-tabs {
+    position: relative;
+    /* border-bottom: 0; */
+    /* width: 80%; */
+    margin: 20px auto;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+}
+
+.event .board > div.board-inner{
+    background-size: 30%;
+}
+
+p.narrow{
+    width: 80%;
+}
+
+.liner{
+    height: 2px;
+    background: #ddd;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    /* background-color: #ffffff; */
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+span.round-tabs{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+span.round-tabs.one{
+    color: rgb(34, 194, 34);border: 2px solid rgb(34, 194, 34);
+}
+
+li.active span.round-tabs.one{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: rgb(34, 194, 34);
+}
+
+span.round-tabs.two{
+    color: #febe29;border: 2px solid #febe29;
+
+}
+
+li.active span.round-tabs.two{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #febe29;
+}
+
+span.round-tabs.three{
+    color: #3e5e9a;border: 2px solid #3e5e9a;
+}
+
+li.active span.round-tabs.three{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #3e5e9a;
+}
+
+span.round-tabs.four{
+    color: #f1685e;border: 2px solid #f1685e;
+}
+
+li.active span.round-tabs.four{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #f1685e;
+}
+
+span.round-tabs.five{
+    color: #999;border: 2px solid #999;
+}
+
+li.active span.round-tabs.five{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #999;
+}
+
+span.round-tabs.six{
+    color: #6500FF;border: 2px solid #6500FF;
+}
+
+li.active span.round-tabs.six{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #6500FF;
+}
+
+span.round-tabs.seven{
+    color: #00FFE5;border: 2px solid #00FFE5;
+}
+
+li.active span.round-tabs.seven{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #00FFE5;
+}
+
+.nav-tabs > li.active > a span.round-tabs{
+    background: #fafafa;
+}
+.nav-tabs > li {
+    width: 14%;
+}
+/*li.active:before {
+    content: " ";
+    position: absolute;
+    left: 45%;
+    opacity:0;
+    margin: 0 auto;
+    bottom: -2px;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    z-index: 1;
+    transition:0.2s ease-in-out;
+}*/
+li:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+   opacity:0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #ddd;
+    transition:0.1s ease-in-out;
+    
+}
+li.active:after {
+    content: " ";
+    position: absolute;
+    left: 45%;
+   opacity:1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #ddd;
+    
+}
+.nav-tabs > li a{
+   width: 70px;
+   height: 70px;
+   margin: 20px auto;
+   border-radius: 100%;
+   padding: 0;
+}
+
+.nav-tabs > li a:hover{
+    background: transparent;
+}
+
+.tab-content{
+}
+.tab-pane{
+   position: relative;
+padding-top: 50px;
+}
+.tab-content .head{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.tab-content h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.tab-content h5{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.
+.btn-outline-rounded{
+    padding: 10px 40px;
+    margin: 20px 0;
+    border: 2px solid transparent;
+    border-radius: 25px;
+}
+
+.btn.green{
+    background-color:#5cb85c;
+    /*border: 2px solid #5cb85c;*/
+    color: #ffffff;
+}
+
+
+
+@media( max-width : 585px ){
+    
+    .board {
+width: 90%;
+height:auto !important;
+}
+    span.round-tabs {
+        font-size:12px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+    }
+    .tab-content .head{
+        font-size:25px;
+        font-weight: bold;
+        }
+    .nav-tabs > li a {
+width: 50px;
+height: 50px;
+line-height:50px;
+}
+
+li.active:after {
+content: " ";
+position: absolute;
+left: 35%;
+}
+
+.btn-outline-rounded {
+    padding:12px 20px;
+    }
+}    </style>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+    <section>
+      <div class="event">
+        <div class="container">
+            <div class="row">
+                <div class="board">
+                    <!-- <h2>Welcome to IGHALO!<sup>™</sup></h2>-->
+                    <div class="board-inner">
+                    <ul class="nav nav-tabs" id="myTab">
+              
+                     <li class="active">
+                     <a href="https://s.bootsnipp.com/iframe/N6mP6#home" data-toggle="tab" title="" aria-expanded="false">
+                      <span class="round-tabs one">
+                         <p style="font-size: 30px;">1</p>
+                     </span> 
+                  </a></li>
+
+                  <li><a href="https://s.bootsnipp.com/iframe/N6mP6#profile" data-toggle="tab" title="">
+                     <span class="round-tabs two">
+                         <p style="font-size: 30px;">2</p>
+                     </span> 
+           </a>
+                 </li>
+                 <li><a href="https://s.bootsnipp.com/iframe/N6mP6#messages" data-toggle="tab" title="">
+                     <span class="round-tabs three">
+                          <p style="font-size: 30px;">3</p>
+                     </span> </a>
+                     </li>
+
+                     <li><a href="https://s.bootsnipp.com/iframe/N6mP6#settings" data-toggle="tab" title="">
+                         <span class="round-tabs four">
+                              <p style="font-size: 30px;">4</p>
+                         </span> 
+                     </a></li>
+
+                     <li><a href="https://s.bootsnipp.com/iframe/N6mP6#doner" data-toggle="tab" title="" aria-expanded="true">
+                         <span class="round-tabs five">
+                              <p style="font-size: 30px;">5</p>
+                         </span> </a>
+                     </li> 
+
+                     <li><a href="https://s.bootsnipp.com/iframe/N6mP6#6" data-toggle="tab" title="" aria-expanded="true">
+                         <span class="round-tabs six">
+                              <p style="font-size: 30px;">6</p>
+                         </span> </a>
+                     </li>  
+
+                     <li><a href="https://s.bootsnipp.com/iframe/N6mP6#7" data-toggle="tab" title="" aria-expanded="true">
+                         <span class="round-tabs seven">
+                              <p style="font-size: 30px;">7</p>
+                         </span> </a>
+                     </li> 
+                     
+                     </ul></div>
+
+                     <div class="tab-content">
+                      <div class="tab-pane fade active in" id="home">
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <center><img src="images/workshop/1.jpeg" style="width: 100%; height: auto; border: 2px solid #5cb85c"></center>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <p class="narrow">
+                            <h3 class="head text-center">Rise of Machine 8.0</h3>
+                                <p class="text-center"><i>“You can’t outrun yourself”</i></p>
+                                <h4>Introduction </h4>
+                                <p>Making a rocker bogie rover based on steering and suspension mechanism.</p>
+
+                                <h4>Abstract</h4>
+                                <p>Kits will be provided and participants will have to make a suitable mechanism on the spot. The team which will complete the track with maximum utilization of resources and in shortest time period will be declared as winner. Sufficient guidance will be provided regarding the model construction in advance before the event.</p>
+
+                                <h4>Description of Rounds</h4>
+                                <h5>Round 1: Quick Guide </h5>
+
+                                <h5>Round 2: Let’s do it  </h5>
+
+                                <h5>Round 3: Prove yourself</h5>
+
+                                <h4>Participation:</h4>
+                                <h5>3 OR 4 participants per team</h5>
+
+                                <h4 class="text-center">Contact</h4>
+                                <h5 class="text-center">Krutik Parikh # +91-7801964938</h5>
+                                <h5 class="text-center">Nirav Gamit # +91-8140748876</h5>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="profile">
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <center><img src="images/workshop/2.jpeg" style="width: 100%; height: auto; border: 2px solid #febe29"></center>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <p class="narrow">
+                            <h3 class="head text-center">Faraday’s Lab 7.0</h3>
+                                <p class="text-center"><i>“Step up your Techno Skills”</i></p>
+                                <h4>Introduction </h4>
+                                <p>This workshop is conducted by a category Expert and researcher wherein the students will be taught to make atransformer along with a bunch of complementary concepts and technical Skills to get ready for industrial Level. </p>
+
+                                <h4>Abstract</h4>
+                                <p>Get acquaintedd with the full edged ln-Detail Tutorial on Transformer & by Building a Transformer with category Expert & Researcher Mr. MulavRathod. Students will also get the detailed Information and statistical data of How the Transmission Lines work & Electrical Power generationfrom water to the one that we use at our Residence. </p>
+
+                                <h4>Participation:</h4>
+                                <h5>Individual</h5>
+
+                                <h4 class="text-center">Contact</h4>
+                                <h5 class="text-center">Devesh Saudagar # +91-9974746855 </h5>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="messages">
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <center><img src="images/workshop/3.jpeg" style="width: 100%; height: auto; border: 2px solid #3e5e9a"></center>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <p class="narrow">
+                            <h3 class="head text-center">WordPress</h3>
+                                <p class="text-center"><i>“Create Your Own World”</i></p>
+                                <h4>Introduction </h4>
+                                <p>A Software to create your own website using single line of code.</p>
+
+                                <h4>Abstract</h4>
+                                <p>We all use numerous websites in everyday life. Hence we have a workshop on Wordpress which is a software used to create websites.</p>
+
+                                <p>This is a workshop by <strong>Rahul Banker</strong>. Participants are required to come with their laptops.</p>
+
+                                <h4>Participation:</h4>
+                                <h5>Individual</h5>
+
+                                <h4 class="text-center">Contact</h4>
+                                <h5 class="text-center">Arpan Patel # +91-7990785708</h5>
+                                <h5 class="text-center">Khushali Mehta # +91-9879283327</h5>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="settings">
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <center><img src="images/workshop/4.jpeg" style="width: 100%; height: auto; border: 2px solid #f1685e"></center>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <p class="narrow">
+                            <h3 class="head text-center">Flutter</h3>
+                                <p class="text-center"><i>“Build up your own horizon” </i></p>
+                                <h4>Introduction </h4>
+                                <p>An open-source mobile application Software Development Kit created by Google.</p>
+
+                                <h4>Abstract</h4>
+                                <p>We all are familiar with usage of various mobile applications and its importance in our daily life. So we are organizing a workshop on Flutter so that we can develop applications for both Android and IOS devices using one common language and one common platform.</p>
+
+                                <p>This is a workshop by <strong>Parth Jhansaria (GDG’s Flutter Head)</strong>. Participants are required to come with fully charged laptops and enthusiasm to explore.</p>
+
+                                <h4 class="text-center">Contact</h4>
+                                <h5 class="text-center">Richa Sharma # +91-9773121107</h5>
+                                <h5 class="text-center">Pranit Brahmbhatt # +91-9978320184</h5>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="doner">
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <center><img src="images/workshop/5.jpeg" style="width: 100%; height: auto; border: 2px solid #999"></center>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <p class="narrow">
+	                            <h3 class="head text-center">AERO-PHILLA</h3>
+	                            	<p class="text-center"><i>“Navigate the future”</i></p>
+	                              <h4>Introduction </h4>
+	                              <p>Build your own RC plane.</p>
+
+	                              <h4>Abstract</h4>
+	                              <p>This workshop is for the lover of aeronautics. You will be taught to build your own RC plane.</p>
+
+	                              <h4>Description of Rounds</h4>
+                                  <h5>Day 1</h5>
+                                  <p> FIRST OF ALL WE WILL GIVE THE DIMENSION SHEET.</p>
+                                  <p> THEN THEY HAVE TO PREPARE STRUCTURE OF RC PLANE. AFTER IT THE COMPONENT WILL BE PROVIDED TO THE PARTICIPANTS. </p>
+  
+                                  <h5>Day 2</h5>
+                                  <p> BATTERY, RECEIVER, MAIN ENGINE WILL BE ASSEMBLED FOR THE TESTING AND THE FLYING WILL BE CONDUCTED BY OUR RESPECTED SIR. </p>
+  
+                                  <h4>Participation:</h4>
+	                              <h5>Team (Min 1- Max 4)</h5>
+
+	                              <h4 class="text-center">Contact</h4>
+	                              <h5 class="text-center">Sahil B. Lukhi # +91-7874527239  </h5>
+	                              <h5 class="text-center">Aapurva Patel # +91-9106741308</h5>
+                          </p>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="6">
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <center><img src="images/workshop/6.jpeg" style="width: 100%; height: auto; border: 2px solid #6500FF"></center>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <p class="narrow">
+                              <h3 class="head text-center">ARD-U-KNOW</h3>
+                                <p class="text-center"><i>“Be your own manufacturer”</i></p>
+                                <h4>Introduction </h4>
+                                <p>This workshop will teach you to build your own Ardiuno.</p>
+
+                                <h4>Abstract</h4>
+                                <p>This workshop will teach you to build your own ArdiunoArduino is very prominent these days for it’s for ability to make new digital devices using microcontroller and microprocessors. Here you will get a chance to make your own arduino, learn sensor interfacing and at the end we will provide you with Image processing Demo.</p>
+
+                                <h4>Description of Rounds</h4>
+                                <p>This workshop is divided into two parts:</p>
+                                <h5>(1) Hardware Part</h5>
+                                <p> - Students will make own charger.</p>
+                                <p> - Knowledge of Microcontroller and how it will work as an Arduino. </p>
+                                <p> - Details about different sensors and their functions.</p>
+                                <p> - Details about different sensors and their functions.</p>
+                                <p> - Demo of Image Processing and Ultrasonic sensor with its functions.</p>
+
+                                <h5>(2) Software Part </h5>
+                                <p> - Understanding of programming for each provided sensor </p>
+                                <p> - Software Installation </p>
+                                <p> - Doubt clearing session </p>
+
+                                <h5> Kit will be containing of all parts except demo components. Deep understanding of world inside microcontroller and Arduino. </h5>
+
+
+                                <h4>Participation:</h4>
+                                <h5>Team of 3-4</h5>
+
+                                <h4 class="text-center">Contact</h4>
+                                <h5 class="text-center">Sagarika Singh # +91-7202975102 </h5>
+                          </p>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="7">
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <center><img src="images/workshop/7.jpeg" style="width: 100%; height: auto; border: 2px solid #00FFE5"></center>
+                          </div>
+                          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                          <p class="narrow">
+                              <h3 class="head text-center">BBG Robo</h3>
+                                <p class="text-center"><i>“Future in your hands”</i></p>
+                                <h4>Introduction </h4>
+                                <p>This workshop will teach you to build your own robot car controlled by your smartphone.</p>
+
+                                <h4>Abstract</h4>
+                                <p>We will first teach you to make a robot with Bluetooth module inside it. We will connect your robot with your smartphone through Bluetooth. You can control the robot by your mobile gestures. </p>
+
+                                <h4>Description of Rounds</h4>
+                                <p>Bluetooth controlled robot involves the operation of robot with the gestures done from your smartphone. This workshop helps participants to understand the concept and use of Ardiuno, BT module, and motor driver module.</p>
+                                <p>Gestures done by you using your smartphone will control your robot. Tilting your phone in any directions will make your robot move in that specific direction.</p>
+
+                                <h4>Workshop Outcome: </h4>
+                                <p> Students will gain practical hands on experience with the following components: Arduino Nano, Bluetooth HC-05, Motor driver. Step by step development of robot and establishment of communication </p>
+                                <h4> Kit: </h4>
+                                <p>Robot development components. Embedded robotics development board. Batteries. Tools.</p>
+                                <h4>Participation:</h4>
+                                <h5>Team of 3-4</h5>
+
+                                <h4 class="text-center">Contact</h4>
+                                <h5 class="text-center">Satish Delvadiya # +91-8200828198</h5>
+                                <h5 class="text-center">Het Shah # +91-9106495226</h5>
+                          </p>
+                        </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        </div>
+
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                        </section>
+  <script type="text/javascript">
+      	$(function(){
+      $('a[title]').tooltip();
+      });
+  </script>
+
+
+</body></html>
